@@ -49,4 +49,4 @@ if __name__ == '__main__':
     all_team_imgs = pickle.load(open('data/all_team_imgs', 'rb'))
     teamlist = pickle.load(open('data/allTeamList2016', 'rb'))
     predDict = pickle.load(open('data/predDict2017', 'rb'))
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=8080, threaded=True)
