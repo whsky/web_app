@@ -1,0 +1,79 @@
+(lp1
+(VWyoming
+VCoastal Carolina
+cnumpy.core.multiarray
+scalar
+p2
+(cnumpy
+dtype
+p3
+(S'f8'
+I0
+I1
+tRp4
+(I3
+S'<'
+NNNI-1
+I-1
+I0
+tbS'\x00\x00\x00\x00\x00\x00\xf0\xbf'
+tRp5
+I6
+tp6
+a(VCal State-Bakersfield
+VGeorgia Tech
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\xf8?'
+tRp7
+I2
+tp8
+a(VTCU
+VCentral Florida
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\x04\xc0'
+tRp9
+I1
+tp10
+a(VTexas A&M-Corpus Christi
+VUMBC
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\x04@'
+tRp11
+I-3
+tp12
+a(VCoastal Carolina
+VWyoming
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\xf8\x7f'
+tRp13
+I-6
+tp14
+a(VFurman
+VSaint Peter's
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\x08@'
+tRp15
+I13
+tp16
+a(VSouth Carolina
+VGonzaga
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\x1a@'
+tRp17
+I-20
+tp18
+a(VOregon
+VNorth Carolina
+g2
+(g4
+S'\x00\x00\x00\x00\x00\x00\x12@'
+tRp19
+I-3
+tp20
+a.

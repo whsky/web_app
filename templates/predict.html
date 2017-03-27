@@ -45,11 +45,12 @@
 								<div class="spotlight">
 									<div class="content">
 
-										<!-- <header class="major">
-											<h2>Make Predictions:</h2>
-										</header> -->
-
-										<h2><img src="static/{{team1_img}}"></img>{{team1}}      vs.   {{team2}}<img src="static/{{team2_img}}"></img></h2><br />
+										<h2>
+											<img src="static/{{team1_img}}"></img>
+											<img src="static/{{team2_img}}"></img>
+											<br />{{team1}} vs. {{team2}}
+										</h2>
+										<br />
 										<h1>{{point_spread}}</h1>
 									<!--	<span class="icon major style1 fa-dribbble"></span> -->
 										<form action="/predict" method='POST' >
@@ -73,6 +74,27 @@
 								</div>
 							</section>
 
+							<section id="upcoming" class="main">
+								<header class="major">
+									<h2>Upcoming Games:</h2>
+								</header>
+								<table class="alt">
+									<thead>
+										<th>Matchup</th>
+										<th>Vegas Spread</th>
+										<th>STNS Spread</th>
+									</thead>
+									<tbody>
+										{% for row in vegas_odds %}
+											<tr>
+											  <td>{{ row[0] }} vs. {{ row[1] }}</td>
+											  <td>{{ row[2] }}</td>
+											  <td>{{ row[3] }}</td>
+											</tr>
+										{% endfor %}
+									</tbody>
+								</table>
+							</section>
 					</div>
 
 				<!-- Footer -->
