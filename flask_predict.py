@@ -7,6 +7,7 @@
 from flask import Flask, request, url_for, render_template, request
 import cPickle as pickle
 import numpy as np
+from datetime import datetime
 from fuzzywuzzy import process
 
 app = Flask(__name__)
@@ -38,9 +39,16 @@ def pnt_predicter():
     team2_img = 'img/TeamLogos/{0}.png'.format(process.extractOne(team2,
                                                 all_team_imgs)[0])
 
+    now = datetime.now().date().month
+    if now < 11 and now > 4:
+        vegas_odds = [""]
+        message = "Sorry, looks like we're between seasons. So you're money is safe...for now."
+    else:
+        message = "Might be time to call your Bookie...Go get 'em tiger!"
+
 
     return render_template('predict.html', team1=team1, team2=team2,
-            point_spread=spread, team1_img=team1_img, team2_img=team2_img, vegas_odds=vegas_odds)
+            point_spread=spread, team1_img=team1_img, team2_img=team2_img, vegas_odds=vegas_odds, message=message)
 
 
 
